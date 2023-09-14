@@ -52,7 +52,7 @@ section#home { /* Show #home by default */
 
 header {
   padding: 5vw 5vw 0 5vw;
-  display: flexk;
+  display: flex;
   flex-wrap: wrap;
   position: absolute;
   width: 100%;
@@ -68,7 +68,6 @@ header h1 {
 
 nav a:not(:last-of-type) {
   margin-right: 1.5vw;
-  margin-bottom: 20px;
 }
 
 /* ------- General ------- */
