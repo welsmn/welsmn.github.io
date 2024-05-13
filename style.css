@@ -190,6 +190,14 @@ pre, textarea { /* for code samples */
   box-shadow: inset 1px 1px 0 rgba(0,0,0,.2), inset -1px -1px 0 rgba(0,0,0,.04) ;
 }
 
+/* text boxes */
+div.text-box {
+   width: 75%;
+   padding: 1em;
+   border: 3px solid red;
+   margin: 0;
+}
+
 /* Inline footnotes */
 
 label {
