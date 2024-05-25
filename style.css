@@ -200,7 +200,10 @@ div.text-box {
 
 /* agenda table */
 table {
-	width: 100%;}
+	width: 100%;
+	border-width: 1 px;
+	border-style: solid;
+	border-color: black;}
 tr:hover {
 	background-color: #c3e6e5;}
 
