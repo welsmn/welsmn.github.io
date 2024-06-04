@@ -203,15 +203,19 @@ table {
 	width: 100%;
 	border-width: 1 px;
 	border-style: solid;
-	border-color: black;}
-tr:hover {
+	border-color: black;
+	}
+
+.tg tr:hover {
 	background-color: #c3e6e5;}
 
 .tg { 
-border-collapse:collapse;border-spacing:0;
-}
-.tg td {
-border-color:black;border-style:solid;border-width:1px;font-family:Arial,sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal; }
+	border-collapse:collapse;border-spacing:0;
+	}
+.tg td 
+	{
+border-color:black;border-style:solid;border-width:1px;font-family:Arial,sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal; 
+	}
 .tg th { border-color:black;border-style:solid;border-width:1px;font-family:Arial,sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;
 }
 .tg .tg-0pky { border-color:inherit;text-align:left;vertical-align:top 
