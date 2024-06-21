@@ -108,7 +108,7 @@ ul li::marker {
 }
 
 li {
-  margin-bottom: .2em;
+  margin-bottom: 0em;
 }
 
 ul, ol {
