@@ -24,7 +24,7 @@ body {
   background: var(--bgcolor);
   max-width: 64em;  /* remove this for a full-width layout */
   margin: 0 auto;  /* centers the layout */
-  padding-top: 0; 
+  padding-top: 6rem; 
 }
 
 /* ------- Sections ------- */
@@ -61,7 +61,7 @@ header {
   align-items: center;
   width: 100%;
   background: var(--bgcolor)
-  position: sticky;
+  position: fixed;
   top: 0;  
   z-index: 2;
 }
@@ -486,6 +486,9 @@ article time {
   }
   nav {
   	gap: 0.5rem 1rem;
+  }
+  body {
+    padding-top: 5rem;
   }
 }
 
