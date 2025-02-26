@@ -25,6 +25,7 @@ body {
   position: relative;
   max-width: 64em;  /* remove this for a full-width layout */
   margin: 0 auto;  /* centers the layout */
+  /*padding-top: 6rem; /* suggested by Grok on 2025feb26 */
 }
 
 /* ------- Sections ------- */
@@ -51,24 +52,25 @@ section#home { /* Show #home by default */
 /* ------- Header ------- */
 
 header {
-  padding: 5vw 5vw 0 5vw;
-  display: flexk;
+  padding: 2rem 5vw;
+  display: flex;
   flex-wrap: wrap;
+  align-items: center;
   position: absolute;
   width: 100%;
   z-index: 2;
+  background: var(--bgcolor)
 }
 
 header h1 {
   font-size: 2em;
-  flex: 1; /* pushes nav to the right */
+  margin: 0 2rem 0 0;
   white-space: nowrap;
-  padding: 0 5vw .5em 0;
 }
 
 nav a:not(:last-of-type) {
-  margin-right: 1.5vw;
-  margin-bottom: 20px;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 /* ------- General ------- */
@@ -469,7 +471,19 @@ article time {
 /* ------- Smaller screens ------- */
 
 @media only screen and (max-width: 680px) {
-  body { font-size: 16px; }
+  header {
+  	padding: 1rem 3vw;
+  }
+  nav {
+  	gap: 0.5rem 1rem;
+  }
+  body { 
+  	padding-top: 8rem;
+  	font-size: 16px; 
+  }
+  section {
+  	padding: calc(8rem + 5vw) 5vw 8vw 5vw;
+  }
 }
 
 @media only screen and (max-width: 540px) {
