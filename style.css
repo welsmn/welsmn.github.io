@@ -30,7 +30,7 @@ body {
 /* ------- Sections ------- */
 
 section {
-  padding: 6rem 5vw 8vw 5vw;
+  padding: calc(6em + 5vw) 5vw 8vw 5vw;
   /* ! Everything below is needed ! */
   display: none;
   position: absolute;
@@ -56,10 +56,10 @@ header {
   padding: 5vw 5vw 0 5vw;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   background: var(--bgcolor)
   position: absolute;
-  z-index: 2;
+  width: 100%;
+  z-index: 10;
 }
 
 header h1 {
@@ -70,17 +70,15 @@ header h1 {
   padding: 0 5vw .5em 0;
 }
 
+/*
 nav {
-	background: red;
-	min-height: 50px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.75rem 1.5rem
-}
+} */
 
 nav a:not(:last-of-type) {
-  margin-right: 0;
-  margin-bottom: 0;
+  margin-right: 1.5vw;
 }
 
 /* ------- General ------- */
@@ -102,8 +100,7 @@ section h1 {
 h2, h3, h4 {
   font-size: 1em;
   font-weight: 600;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 1.6em 0 .6em 0;
 }
 
 p, ul, ol, article {
@@ -481,15 +478,9 @@ article time {
 /* ------- Smaller screens ------- */
 
 @media only screen and (max-width: 680px) {
-  header {
-  	padding: 1rem 3vw;
-  }
-  nav {
-  	gap: 0.5rem 1rem;
-  }
-  section {
-  	padding: 8rem 5vw 8vw 5vw;
-  }
+	body {
+		font-size: 16px;
+	}
 }
 
 @media only screen and (max-width: 540px) {
