@@ -35,6 +35,7 @@ section {
   display: none;
   position: absolute;
   top: 0;
+  left: 0;
   min-height: 100vh;
   width: 100%;
   background: var(--bgcolor);
@@ -47,9 +48,9 @@ section:target { /* Show section */
 section#home { /* Show #home by default */
   display: block;
 }
-/* section:target ~ section#home {
+section:target ~ section#home {
 	display: none; /* added on 2025feb26 -hides #home if a later section is targeted. */
-/* } */
+}
 
 /* ------- Header ------- */
 
@@ -62,7 +63,7 @@ header {
   background: var(--bgcolor)
   position: absolute;
   top: 0;  
-  z-index: 10;
+  z-index: 2;
 }
 
 header h1 {
@@ -486,11 +487,8 @@ article time {
   nav {
   	gap: 0.5rem 1rem;
   }
-  body {
-  	padding-top: 8rem;
-  }
   section {
-  	padding: calce(8rem + 5vw) 5vw 8vw 5vw;
+  	padding: 8rem 5vw 8vw 5vw;
   }
 }
 
