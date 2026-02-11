@@ -385,6 +385,47 @@ article time {
   object-fit: contain;
 }
 
+/* 2×3 image grid – no borders, clean & responsive */
+.image-grid {
+  max-width: 1200px;           /* or match your content width, e.g. 1000px */
+  margin: 0 auto;              /* centers the grid */
+  padding: 0 20px;             /* optional side breathing room – adjust or remove */
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);   /* 3 equal columns */
+  gap: 20px;                               /* space between images */
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  object-fit: cover;          /* crops nicely if images have different ratios */
+}
+
+/* Optional: subtle hover effect */
+.image-grid img:hover {
+  opacity: 0.92;
+  transition: opacity 0.25s ease;
+}
+
+/* Responsive adjustments – stack on smaller screens */
+@media (max-width: 900px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);   /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: 1fr;              /* 1 column on phones */
+    gap: 16px;
+  }
+}
+
 /* ------- Slideshow ------- */
 
 .slides {
